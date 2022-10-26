@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FCF8E8;
+    color: #222;
+    font-size: 1rem;
+    letter-spacing: .1rem;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+h2, h3, h4 {
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: capitalize;
+    letter-spacing: .2rem;
+
+}
+
+li {
+    list-style: none;
+}
+
+svg:not(.fa-clock, .footer-icon) {
+    color: #DF7861;
+}
+a {
+    text-decoration: none;
+    color: #111;
+    padding: .7rem .5rem;
+    display: inline-flex;
+    width: fit-content;
+}
+
+a:hover:not(.btn, .active) {
+    background-color: #ECB390;;
+    transition: 0.5s;
+}
+
+.btn {
+    width: auto;
+    height: auto;
+    background-color: #ECB390;
+    padding: 0.625rem 1.25rem;
+    text-transform: capitalize;
+}
+
+.btn:hover {
+    background-color: #FCF8E8;
+    border: 0.125rem solid #ECB390;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    height: 5rem;
+    top: 0;
+    left: 0;
+    background-color: #FCF8E8;
+    z-index: 1000;
+}
+
+.navigation {
+    width: auto;
+    margin-left: 1.25rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3125rem;
+}
+
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1.8rem;
+    margin-right: 1.87rem;
+}
+
+#input-search {
+    width: 9.375rem;
+    height: 1.5rem;
+    padding: 1rem;
+    background-color: transparent;
+    color: #222;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+}
+
+#input-search:focus {
+    background-color: #fff;
+    border: 0.125rem solid #222;
+}
+
+.header-btn {
+    width: 10%;
+    margin: -1.8rem;
+    background-color: transparent;
+    color: #111;
+    font-size: 1.2rem;
+    vertical-align: middle;
+    cursor: pointer;
+    outline: none;
+    border: none; 
+}
+
+.logo-div {
+    width: auto;
+}
+
+.logo {
+    display: inline-flex;
+    width: 31.25rem;
+}
+
+.customer-account {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.875rem;
+    font-size: 1.2rem;
+    margin-right: 1.25rem;
+}
+
+.active {
+    padding: 0.625rem;
+    border: 0.125rem solid #ECB390;
+    background-color: #ECB390;
+    color: #111;
+}
+
+main {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+}
+
+.hero {
+    margin: 6rem 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.hero-text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: flex-start;
+    margin-top: 3rem;
+}
+
+.hero-text h2 {
+    font-size: 5rem;
+    margin: 6rem;
+}
+
+.hero-text h2 span {
+    font-style: italic;
+    color: #ECB390;;
+}
+
+.hero-more {
+    margin-left: 6rem;
+    font-size: 1.2rem;
+}
+
+.hero-icon {
+    margin-left: 10rem;
+    margin-top: -2rem;
+    font-size: 3rem;
+    font-weight: lighter;
+}
+
+.write-mode {
+    writing-mode: vertical-lr;
+    font-size: 1.2rem;
+    margin-top: -5rem;
+}
+
+.hero-image {
+    width: 50%;
+}
+
+.hero img {
+    width: 100%;
+    height: 37.5rem;
+}
+
+aside {
+    max-width: 65rem;
+    margin: 0 auto;
+    width: 100%;
+}
+
+aside h3 {
+    text-align: justify;
+    text-transform: none;
+    font-size: 2rem;
+    margin: 3rem 0;
+}
+
+.content {
+    max-width: 80rem;
+    width: 100%;
+    margin: 4rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content-head {
+    width: fit-content;
+    font-size: 2.5rem;
+    text-align: center;
+    color: #fff;
+    background-color: #DF7861;
+    padding: 0.5rem;
+}
+
+.content-wrapper-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1.25rem;
+    gap: 1.25rem;
+}
+
+.new-arrival {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0.3125rem 0;
+}
+
+.new-arrival img, .blog img{
+    width: 25rem;
+    height: 18.75rem;
+    display: block;
+}
+
+.new-arrival h4, .blog h4 {
+    font-size: 1.3rem;
+    margin: 0.2rem;
+    font-weight: bolder;
+}
+
+.new-arrival a, .blog a {
+    background-color: #DF7861;
+    padding: 0.3125rem;
+    margin: 0.3125rem 0;
+}
+
+.content-wrapper-grid{
+    margin: 3rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: "b sb sm";
+    gap: 0.625rem;
+}
+
+.big {
+    grid-area: b;
+}
+
+.sb {
+    grid-area: sb;
+}
+
+.sm {
+    grid-area: sm;
+}
+
+.blog {
+    border: 0.125rem double rgba(17, 17, 17, 0.2);
+    padding: 0.4rem;
+}
+
+.flex-time {
+    display: flex;
+    gap: 0.625rem;
+    margin-top: 0.4rem;
+    color: darkblue;
+}
+
+.blog h4 {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #FCF8E8;
+    margin-top: 7rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-top: 0.125rem solid rgba(17, 17, 17, 0.2);
+}
+
+.foot-top {
+    height: 15.625rem;
+    padding: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.customer {
+    margin-top: 0.5rem;
+}
+
+.foot-top h4 {
+  font-weight: 700;
+  padding: 0.3rem;
+  text-decoration: underline;
+}
+
+.foot-top p {
+    padding: 0.2rem;
+}
+
+.copywright {
+    background-color: #ECB390;
+    padding: 0.5rem;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo-foot {
+    width: 9.375rem;
+    display: inline-flex;
+}
+
+.socials {
+    display: flex;
+    gap: 0.625rem;
+    margin-top: 0.5rem;
+}
+
+.footer-icon {
+  height: 1.875rem;
+}
+
+.card img {
+    width: 5rem;
+    height: 3.125rem;
+
+}
