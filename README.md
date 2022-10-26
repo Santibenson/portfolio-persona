@@ -7,3 +7,6 @@ No media queries, it's made for desktop screen and above.
 
 # v1
 This is the first version. I'll update it subsequently.
+
+# Credit
+The images aside the logos are gotten from unsplash.com
